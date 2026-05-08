@@ -1,0 +1,21 @@
+prefix: "<dark_gray>[<gold><bold>SCL</bold></gold>]</dark_gray> "
+
+combat:
+  tagged: "<red><bold>⚔ COMBAT</bold></red> <gray>vs</gray> <yellow><player></yellow> <gray>—</gray> <white><time>s</white>"
+  ended: "<green><bold>✔</bold></green> <gray>You are no longer in combat.</gray>"
+  logged-console: "[SafeCombatLog] COMBAT LOG: <player> disconnected during combat with <opponent> in world '<world>' at <x>, <y>, <z>. Time remaining: <time>s"
+  logged-staff: "<prefix><yellow>⚠ <bold><player></bold> combat-logged against <bold><opponent></bold></yellow> <gray>in</gray> <aqua><world></aqua> <gray>at</gray> <white><x>, <y>, <z></white> <gray>(<red><time>s left</red>)</gray>"
+  logged-broadcast: "<prefix><red><player> disconnected during combat!</red>"
+
+commands:
+  no-permission: "<prefix><red>You don't have permission to do that.</red>"
+  player-not-found: "<prefix><red>Player not found: <bold><player></bold></red>"
+  reload-success: "<prefix><green>Configuration reloaded successfully.</green>"
+  not-in-combat: "<prefix><gray><player> is not currently in combat.</gray>"
+  combat-status: "<prefix><yellow><bold><player></bold> is in combat with <bold><opponent></bold></yellow> <gray>—</gray> <white><time>s remaining</white>"
+  history-header: "<prefix><gold><bold>Combat Log History — <player></bold></gold>"
+  history-entry: "  <dark_gray>#<index></dark_gray> <gray><timestamp></gray> <dark_gray>vs</dark_gray> <yellow><opponent></yellow> <dark_gray>in</dark_gray> <aqua><world></aqua> <dark_gray>@</dark_gray> <white><x>, <y>, <z></white>"
+  history-empty: "<prefix><gray>No combat log history found for <player>.</gray>"
+  status-header: "<prefix><gold><bold>Players Currently In Combat:</bold></gold>"
+  status-entry: "  <yellow><player></yellow> <dark_gray>vs</dark_gray> <yellow><opponent></yellow> <dark_gray>(<red><time>s</red>)</dark_gray>"
+  status-empty: "<prefix><gray>No players are currently in combat.</gray>"
