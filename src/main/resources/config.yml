@@ -1,0 +1,10 @@
+combat:
+  duration-seconds: 15
+  notification-type: actionbar
+
+logging:
+  broadcast-to-global-chat: false
+  log-ip-addresses: false
+  auto-clean:
+    enabled: true
+    days-to-keep: 30
