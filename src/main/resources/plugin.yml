@@ -1,0 +1,34 @@
+name: SafeCombatLog
+version: '${version}'
+main: dev.safecombatlog.SafeCombatLog
+api-version: '1.21'
+description: Lightweight PvP combat logging plugin.
+authors: [ SafeCombatLog ]
+
+commands:
+  combatlog:
+    description: Main SafeCombatLog command
+    usage: /combatlog <reload|check|history|status>
+    aliases: [ cl, clog ]
+    permission: combatlog.use
+
+permissions:
+  combatlog.use:
+    description: Allows use of /combatlog base command
+    default: true
+  combatlog.admin:
+    description: Full admin access
+    default: op
+    children:
+      combatlog.notify: true
+      combatlog.check: true
+      combatlog.reload: true
+  combatlog.notify:
+    description: Receive staff notifications
+    default: op
+  combatlog.check:
+    description: Check combat status and history
+    default: op
+  combatlog.reload:
+    description: Reload the configuration
+    default: op
